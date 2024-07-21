@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using UndecidedApp.Data.Models.PostModels
+
+<tr>
+    <th scope="row">
+        <NavLink href="@($"post/{post?.PostID}")" Match="NavLinkMatch.Prefix">
+        @post?.PostID    
+        </NavLink>
+    </th>
+    <td>@post?.Title</td>
+    <td>@post?.PostBody</td>
+    <td>
+    @foreach (string tag in post?.Tags){
+            @tag
+        }
+    </td>
+
+</tr>
+
+
+@code {
+    [Parameter]
+    public Post? post { get; set; }
+}

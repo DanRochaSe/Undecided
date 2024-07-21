@@ -1,0 +1,16 @@
+﻿@using UndecidedApp.Data.Models.PostModels
+
+<div class="card" style="width: 18rem;">
+    <img src="./Images/header-2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@post?.Title.ToString()</h5>
+        <p class="card-text">@post?.PostBody.ToString()</p>
+        <p class="card-text">@post?.Tags[1].ToString()</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Post? post { get; set; }
+
+}
