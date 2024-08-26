@@ -1,0 +1,6 @@
+﻿body {
+}
+
+.table-hover > tbody > tr:hover {
+    --bs-table-accent-bg: darkorange !important;
+}

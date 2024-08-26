@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\UndecidedApp.csproj": {}
+    "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\UndecidedApp.csproj": {
+    "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\UndecidedApp.csproj",
+        "projectUniqueName": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj",
         "projectName": "UndecidedApp",
-        "projectPath": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\UndecidedApp.csproj",
-        "packagesPath": "C:\\Users\\d4nie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\obj\\",
+        "projectPath": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj",
+        "packagesPath": "C:\\Users\\DanielRocca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\d4nie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DanielRocca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +46,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -112,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,77 @@
+﻿@page "/contact"
+
+
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authorization
+@using System.Security.Claims
+@using UndecidedApp.Pages
+@using UndecidedApp.Shared
+@inject IHttpContextAccessor _context
+
+
+@attribute [Authorize(Roles = "Admin")]
+
+<component type="typeof(NavMenu)" render-mode="Server" />
+<component type="typeof(Header)" render-mode="Server" />
+
+
+<h1>Contact</h1>
+
+Welcome to the Undecided App
+
+
+Contact us by calling us....
+
+
+<h2>Claims</h2>
+
+<dl>
+@foreach(var claim in User.Claims)
+{
+        <dt>@claim.Type</dt>
+        <dt>@claim.Value</dt>
+}
+</dl>
+
+
+<h2>Properties</h2>
+
+<dl>
+    @foreach(var prop in properties)
+    {
+        <dt>@prop.Key</dt>
+        <dt>@prop.Value</dt>
+    }
+</dl>
+
+
+@code{
+    public IDictionary<string, string?> properties { get; set; }
+    public string message { get; set; } = String.Empty;
+    public ClaimsPrincipal User { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        {
+            try
+            {
+                User = _context.HttpContext.User;
+                var authResult = await _context.HttpContext.AuthenticateAsync();
+                
+
+                if (authResult?.Principal != null && authResult.Properties != null)
+                {
+                    properties = authResult.Properties.Items;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+
+
+        }
+    }
+    
+}

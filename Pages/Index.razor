@@ -24,13 +24,15 @@ else
         </div>
     </div>
     <br/>
-    <table class="table table-borderless">
+    <table class="table table-light table-striped table table-hover">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">Title</th>
-                <th scope="col">Body</th>
-                <th scope="col">Tags</th>
+                <th scope="col" width="30%">Title</th>
+                <th scope="col" width="15%">Author</th>
+                <th scope="col" width="30%">Body</th>
+                <th scope="col" width="10%">Tags</th>
+                <th scope="col" width="10%">Posted At</th>
+
             </tr>
         </thead>
         <tbody>
@@ -45,28 +47,15 @@ else
 
 
 
-<button @onclick=AddPost>Add Post</button>
-
+@* <button @onclick=AddPost>Add Post</button>
+ *@
 
 @code{
     private IEnumerable<Post> posts;
 
-    
     protected override async Task OnInitializedAsync()
     {
-        // if(authenticationStateTask != null)
-        // {
-        //     var authState = await authenticationStateTask;
-        //     var user = authState?.User;
-
-        //     if(user?.Identity is not null && user.Identity.IsAuthenticated)
-        //     {
-        //         authMessage = "The user is authenticated";
-        //     }
-        // };
-
         posts = await postServices.GetAllPost();
-
     }
 
     protected async void AddPost()

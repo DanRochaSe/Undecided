@@ -24,7 +24,7 @@ namespace UndecidedApp.Data.Models.PostModels
 
         public IList<string> Tags { get; set; }
 
-        public float? Raring { get; set; } = 0.0f;
+        public float? Rating { get; set; } = 0.0f;
 
         public int? AuthorID { get; set; } = 0;
 

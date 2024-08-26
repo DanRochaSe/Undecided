@@ -6,12 +6,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Drawing.Imaging;
+using System.Data;
+using ZstdSharp.Unsafe;
 
 namespace UndecidedApp.Services
 {
     public class PostService : IPostService
     {
         private readonly UndecidedDBContext _dbContext;
+
+        private readonly Dictionary<string, IEnumerable<Post>> _cache = new Dictionary<string, IEnumerable<Post>>();
 
         public PostService(UndecidedDBContext dbContext)
         {
@@ -37,12 +42,23 @@ namespace UndecidedApp.Services
 
         public async Task<IEnumerable<Post>> GetAllPost()
         {
-            return await _dbContext.Post.OrderBy(p => p.PostID).AsNoTracking().ToListAsync<Post>();
+
+            if (_cache.TryGetValue("posts", out IEnumerable<Post>? posts))
+            {
+                return posts;
+            }
+
+            IEnumerable<Post> postList  =  await _dbContext.Post.OrderBy(p => p.PostID).AsNoTracking().ToListAsync<Post>();
+            _cache["posts"] = postList;
+
+            return postList;
+
         }
 
-        public Post GetPostById(ObjectId id)
+        public async Task<Post> GetPostById(ObjectId id)
         {
-            throw new System.NotImplementedException();
+            return await _dbContext.Post.FindAsync(id);
+    
         }
 
         Task<IEnumerable<Post>> IPostService.GetAllPost()

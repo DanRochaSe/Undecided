@@ -1,12 +1,29 @@
 ﻿@using UndecidedApp.Data.Models.PostModels
+<div class="col-sm-6 justify-content-center">
 
-<div class="card" style="width: 18rem;">
-    <img src="./Images/header-2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h5 class="card-title">@post?.Title.ToString()</h5>
-        <p class="card-text">@post?.PostBody.ToString()</p>
-        <p class="card-text">@post?.Tags[1].ToString()</p>
-    </div>
+    <NavLink href="@($"post/{post?.PostID}")" Match="NavLinkMatch.Prefix" style="text-decoration:none;">
+
+
+        <div class="card my-5 m-auto" style="max-width: 40vw;">
+            <div class="row g=0">
+                <div class="col-md-4">
+                    <img src="/images/undecided2.jpg" height="100%" class="card-img-top" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body" style="color: rgba(0,0,0,0.8)">
+                        <h3 class="card-title">@post.Title.ToString()<i class="fa-solid fa-fire" style="float: right; color: red !important;"></i></h3><br />
+                        <p class="card-text" style="font-weight: 500; font-size: 1.125rem;">@post.PostBody.ToString().Substring(0, 30)</p>
+                        <p class="card-text"><i class="fa-solid fa-tag"></i> @post.Tags[1].ToString()</p>
+                        <div style="display: flex; justify-content: space-between; font-style: italic;">
+                            <p class="card-text">Author: @post?.AuthorName?.ToString()</p>
+                            <p class="card-text" style="float: right;">Created At: @post?.CreatedAt.ToString("dd/MM/yyyy")</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </NavLink>
 </div>
 
 @code {
