@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\images\\undecided2.jpg"
     },
     {
+      "Id": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\js\\ThemeToggler.js",
+      "PackagePath": "staticwebassets\\js\\ThemeToggler.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UndecidedApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

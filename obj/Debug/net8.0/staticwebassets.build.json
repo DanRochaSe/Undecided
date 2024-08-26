@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "affU+QgcuCdJe9DWIRagvNN1VHjeTmyu+QGc2BFnZEM=",
+  "Hash": "ZSln0PYcfFk9t8DyHIfHZhXKymWTjezue55TMclNqRM=",
   "Source": "UndecidedApp",
   "BasePath": "_content/UndecidedApp",
   "Mode": "Default",
@@ -1497,6 +1497,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Undecided3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\js\\ThemeToggler.js",
+      "SourceId": "UndecidedApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\",
+      "BasePath": "_content/UndecidedApp",
+      "RelativePath": "js/ThemeToggler.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ThemeToggler.js"
     }
   ]
 }

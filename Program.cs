@@ -34,12 +34,17 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<PostService>();
+builder.Services.AddMemoryCache();
+builder.Services.AddScoped<IColorModeService, ColorModeService>();
+
+
 builder.Services.AddAuthentication().AddGoogle(opt =>
 {
     opt.ClientId = configuration["GoogleAuth:ClientId"];
     opt.ClientSecret = configuration["GoogleAuth:ClientSecret"];
 
 });
+
 
 var app = builder.Build();
 

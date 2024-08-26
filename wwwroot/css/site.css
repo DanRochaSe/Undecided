@@ -103,3 +103,12 @@ header.masthead {
     font-size: 1.5rem !important;
 }
 
+
+[data-bs-theme="light"] {
+    --bs-body-color: #0d5e8de4 !important;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-color: black !important;
+}
+

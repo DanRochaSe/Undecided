@@ -55,7 +55,12 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        posts = await postServices.GetAllPost();
+        //posts = await postServices.GetAllPost();
+        posts = new List<Post>();
+        posts.Append<Post>(new Post { Title = "Test", PostBody = "Test 1 ahas;aspdo as;dk asd;as", Tags = ["Test", "Mongo"] });
+        posts.Append<Post>(new Post { Title = "Test", PostBody = "Test 1 ahas;aspdo as;dk asd;as", Tags = ["Test", "Mongo"] });
+        posts.Append<Post>(new Post { Title = "Test", PostBody = "Test 1 ahas;aspdo as;dk asd;as", Tags = ["Test", "Mongo"] });
+        posts.Append<Post>(new Post { Title = "Test", PostBody = "Test 1 ahas;aspdo as;dk asd;as", Tags = ["Test", "Mongo"] });
     }
 
     protected async void AddPost()

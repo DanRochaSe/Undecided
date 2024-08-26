@@ -1,4 +1,6 @@
 /* _content/UndecidedApp/Shared/Header.razor.rz.scp.css */
+
+
 header.masthead[b-99cpgfjb8h] {
     position: relative;
     margin-bottom: 3rem;
@@ -20,7 +22,7 @@ header.masthead[b-99cpgfjb8h] {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #212529;
+        background-color: var(--bs-body-color);
         opacity: 0.5;
     }
 

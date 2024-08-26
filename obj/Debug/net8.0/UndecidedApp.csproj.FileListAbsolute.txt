@@ -301,6 +301,19 @@ C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\UndecidedApp.genruntimeconfig.cache
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\ref\UndecidedApp.dll
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\bin\Debug\net8.0\dotnet-ef.dll
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.AssemblyReference.cache
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.GeneratedMSBuildEditorConfig.editorconfig
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfoInputs.cache
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfo.cs
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.CoreCompileInputs.cache
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cs
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cache
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cache
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cs
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.dll
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\refint\UndecidedApp.dll
+H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\appsettings.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\UndecidedApp.staticwebassets.runtime.json
@@ -316,6 +329,7 @@ C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Azure.Core.d
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\DnsClient.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Humanizer.dll
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -598,8 +612,10 @@ C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebass
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UndecidedApp.props
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UndecidedApp.props
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\Header.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\PostList.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\bundle\UndecidedApp.styles.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\projectbundle\UndecidedApp.bundle.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\Undecide.D6A398D2.Up2Date
@@ -608,19 +624,3 @@ C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\refint\Undec
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.genruntimeconfig.cache
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\ref\UndecidedApp.dll
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\Header.razor.rz.scp.css
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.AssemblyReference.cache
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.GeneratedMSBuildEditorConfig.editorconfig
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfoInputs.cache
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfo.cs
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.CoreCompileInputs.cache
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cs
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cache
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cache
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cs
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.dll
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\refint\UndecidedApp.dll
-H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\PostList.razor.rz.scp.css
