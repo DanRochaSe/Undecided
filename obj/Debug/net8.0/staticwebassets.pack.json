@@ -5,6 +5,34 @@
       "PackagePath": "staticwebassets\\UndecidedApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\Images\\Undecided3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Undecided3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\Images\\header-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\header-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\Images\\home-bg.jpg",
+      "PackagePath": "staticwebassets\\Images\\home-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\Images\\undecided1.jpg",
+      "PackagePath": "staticwebassets\\Images\\undecided1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\Images\\undecided2.jpg",
+      "PackagePath": "staticwebassets\\Images\\undecided2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\css\\FontAwesome\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\FontAwesome\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\css\\FontAwesome\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\css\\FontAwesome\\fontawesome.min.css"
+    },
+    {
       "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
@@ -53,8 +81,32 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
       "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\js\\all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\d4nie\\OneDrive\\Documents\\UndecidedApp\\wwwroot\\logo1.png",
+      "PackagePath": "staticwebassets\\logo1.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UndecidedApp.Microsoft.AspNetCore.StaticWebAssets.props",

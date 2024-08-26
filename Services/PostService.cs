@@ -6,16 +6,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using System.Drawing.Imaging;
+using Microsoft.Extensions.Caching.Memory;
+using AspNetCore;
 
 namespace UndecidedApp.Services
 {
     public class PostService : IPostService
     {
         private readonly UndecidedDBContext _dbContext;
+        private readonly IMemoryCache _cache;
 
-        public PostService(UndecidedDBContext dbContext)
+        private MemoryCacheEntryOptions cacheOptions = new MemoryCacheEntryOptions()
+                .SetSlidingExpiration(System.TimeSpan.FromMinutes(30))
+                .SetAbsoluteExpiration(System.TimeSpan.FromMinutes(300))
+                .SetPriority(CacheItemPriority.NeverRemove)
+                .SetSize(2048);
+
+        public PostService(UndecidedDBContext dbContext, IMemoryCache cache)
         {
             _dbContext = dbContext;
+            _cache = cache;
         }
 
         public void AddPost(Post newPost)
@@ -23,6 +34,8 @@ namespace UndecidedApp.Services
             _dbContext.Post.Add(newPost);
             _dbContext.ChangeTracker.DetectChanges();
             _dbContext.SaveChanges();
+            string cacheKey = "posts";
+            _cache.Remove(cacheKey);
         }
 
         public void DeletePost(Post postToDelete)
@@ -37,12 +50,25 @@ namespace UndecidedApp.Services
 
         public async Task<IEnumerable<Post>> GetAllPost()
         {
-            return await _dbContext.Post.OrderBy(p => p.PostID).AsNoTracking().ToListAsync<Post>();
+            string cacheKey = "products";
+            if(!_cache.TryGetValue(cacheKey, out List<Post>? posts)){
+                posts = await _dbContext.Post.OrderBy(p => p.PostID).AsNoTracking().ToListAsync<Post>();
+                _cache.Set(cacheKey, posts, cacheOptions);
+            }
+                         
+            return posts;
+            
         }
 
-        public Post GetPostById(ObjectId id)
+        public async Task<Post> GetPostById(ObjectId id)
         {
-            throw new System.NotImplementedException();
+            string cacheKey = $"post_{id}";
+            if(!_cache.TryGetValue(cacheKey, out Post? post)){
+                post = await _dbContext.Post.AsNoTracking().FirstOrDefaultAsync(p => p.PostID == id);
+                _cache.Set(cacheKey, post, cacheOptions);
+            }
+            return post;
+    
         }
 
         Task<IEnumerable<Post>> IPostService.GetAllPost()

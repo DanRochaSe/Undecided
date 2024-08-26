@@ -301,3 +301,9 @@ C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\UndecidedApp.genruntimeconfig.cache
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\ref\UndecidedApp.dll
 C:\Users\d4nie\OneDrive\Documents\UndecidedApp\bin\Debug\net8.0\dotnet-ef.dll
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\Header.razor.rz.scp.css
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\bin\Debug\net8.0\AspNetCore.Identity.MongoDbCore.dll
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\bin\Debug\net8.0\MongoDbGenericRepository.dll
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\PostList.razor.rz.scp.css
+C:\Users\d4nie\OneDrive\Documents\UndecidedApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

@@ -1,0 +1,36 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@model UndecidedApp.Areas.Identity.Pages.Account.CreateRoleModel
+@{
+    ViewData["Title"] = "Creat Role";
+}
+
+@attribute [Authorize(Roles="Admin")]
+
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Message!= String.Empty)
+{
+    <div class="p-1 mb-2 bg-success text-white">@Model.Message</div>
+}
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+            <div class="form-floating mb-3">
+                <input asp-for="Input.Name" class="form-control" aria-required="true" />
+                <label asp-for="Input.Name">Role Name</label>
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>            
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Create Role</button>
+        </form>
+    </div>
+    
+</div>
+

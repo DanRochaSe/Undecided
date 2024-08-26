@@ -1,20 +1,16 @@
 ﻿@inherits LayoutComponentBase
 
-<PageTitle>UndecidedApp</PageTitle>
+@inject IJSRuntime JSRuntime    
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<div class="page bg-light bg-opacity-50" style="min-height: 100vh;">
 
-    <main>
-        <div class="top-row px-4 auth">
-            <LoginDisplay />
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
+    <div class="main">
+         <NavMenu />
+        <Header />
 
-        <article class="content px-4">
+        <div class="content" style="padding:0 !important;">
             @Body
-        </article>
-    </main>
+        </div>
+    </div>
 </div>
+

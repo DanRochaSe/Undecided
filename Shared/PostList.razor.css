@@ -1,0 +1,6 @@
+﻿body {
+}
+
+.table-hover > tbody > tr:hover {
+    --bs-table-accent-bg: rgb(187 150 56) !important;
+}

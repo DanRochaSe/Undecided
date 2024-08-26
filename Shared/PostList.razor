@@ -1,19 +1,16 @@
 ﻿@using Microsoft.AspNetCore.Components.Routing
 @using UndecidedApp.Data.Models.PostModels
 
+
 <tr>
     <th scope="row">
-        <NavLink href="@($"post/{post?.PostID}")" Match="NavLinkMatch.Prefix">
-        @post?.PostID    
-        </NavLink>
+        <NavLink href="@($"post/{post?.PostID}")" Match="NavLinkMatch.Prefix" style="text-decoration: none; color: black;">
+        @post?.Title
+    </NavLink>
     </th>
-    <td>@post?.Title</td>
+    <td>@post?.AuthorName</td>
     <td>@post?.PostBody</td>
-    <td>
-    @foreach (string tag in post?.Tags){
-            @tag
-        }
-    </td>
+    <td>@tags.TrimEnd('-')</td>
 
 </tr>
 
@@ -21,4 +18,17 @@
 @code {
     [Parameter]
     public Post? post { get; set; }
+
+    public string tags = String.Empty;
+
+    protected override Task OnInitializedAsync()
+    {
+        foreach(string tag in post?.Tags)
+        {
+            tags += tag.ToString() + " -";
+        }
+
+        return base.OnInitializedAsync();
+    }
+
 }

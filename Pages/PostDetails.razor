@@ -1,0 +1,63 @@
+﻿@page "/post/{postID}"
+
+@using UndecidedApp.Data.Models.PostModels
+@using UndecidedApp.Services
+@using MongoDB.Bson
+
+
+
+@inject PostService postService;
+
+
+<div class="post-detail">
+    @if (post == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <div class="post-header">
+            <h1>@post.Title</h1>
+            <p class="author">by @post.AuthorName</p>
+        </div>
+        @* <img src="@post.ImagePath" alt="Post Image" class="post-image" /> *@
+        <div class="post-body">
+            <p>@post.PostBody</p>
+        </div>
+        <div class="post-tags">
+            @foreach (var tag in post.Tags)
+            {
+                <span class="tag">@tag</span>
+            }
+        </div>
+        <div>
+            <span>post.AuthorName</span>
+        </div>
+
+        <div class="comment-section">
+        </div>
+    }
+</div>
+
+
+
+@code {
+    [Parameter]
+    public string postID { get; set; }
+
+    private Post post;
+
+    private Comment newComment = new Comment();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        ObjectId id = ObjectId.Parse(postID);
+        post = await postService.GetPostById(id);
+    }
+
+    // private void SetRating(int rating)
+    // {
+    //     post.Rating = rating;
+    // }
+
+}

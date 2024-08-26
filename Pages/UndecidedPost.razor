@@ -1,0 +1,40 @@
+﻿@page "/Post/{PostID}"
+
+@using MongoDB.Bson
+@using UndecidedApp.Data.Models.PostModels
+@using UndecidedApp.Services
+
+@inject PostService _postService;
+
+
+@if(post != null)
+{
+    <div>
+        <h3>@post?.Title</h3>
+        <p>@post.PostBody</p>
+    </div>
+}
+else
+{
+    <div>
+        <h3>Post not found</h3>
+    </div>
+}
+
+
+
+@code {
+
+    [Parameter]
+    public String PostID { get; set; }
+
+    private Post? post;
+
+    protected override async Task OnInitializedAsync()
+    {
+        
+        ObjectId objectId = ObjectId.Parse(PostID);
+        post = await _postService.GetPostById(objectId);
+    }
+
+}

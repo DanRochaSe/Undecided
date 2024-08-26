@@ -1,12 +1,27 @@
 ﻿<AuthorizeView>
     <Authorized>
-        <a href="Identity/Account/Manage">Hello, @context.User.Identity?.Name!</a>
-        <form method="post" action="Identity/Account/Logout">
-            <button type="submit" class="nav-link btn btn-link">Log out</button>
-        </form>
-    </Authorized>
+            <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="Identity/Account/Manage">Hello, @context.User.Identity?.Name!</a>
+            </li>
+            <li class="nav-item">
+                <form method="post" action="Identity/Account/Logout">
+                <button type="submit" class="nav-link px-lg-3 py-3 py-lg-4 bg-transparent border-0">Log out</button>
+                </form>
+            </li>
+    </Authorized>     
     <NotAuthorized>
-        <a href="Identity/Account/Register">Register</a>
-        <a href="Identity/Account/Login">Log in</a>
+            <li class="nav-item">
+                <NavLink class="nav-link px-lg-3 py-3 py-lg-4" href="Identity/Account/Register">Register</NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink class="nav-link px-lg-3 py-3 py-lg-4" href="Identity/Account/Login">Log in</NavLink>
+            </li>
     </NotAuthorized>
+</AuthorizeView>
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <li class="nav-item">
+            <NavLink class="nav-link px-lg-3 py-3 py-lg-4" href="Identity/Account/CreateRole">Create Role</NavLink>
+        </li>
+    </Authorized>
 </AuthorizeView>

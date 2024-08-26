@@ -13,7 +13,15 @@
     <link href="css/site.css" rel="stylesheet" />
     <link href="UndecidedApp.styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+
+
+
 </head>
 <body>
     <component type="typeof(App)" render-mode="ServerPrerendered" />
@@ -30,5 +38,17 @@
     </div>
 
     <script src="_framework/blazor.server.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('#mainNav');
+            if (window.pageYOffset > 100) { // Adjust this value based on when you want the change to occur
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+
 </body>
 </html>
