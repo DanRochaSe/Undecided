@@ -19,6 +19,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using UndecidedApp.Data.Models.AuthModels;
+using UndecidedApp.Helper;
 
 namespace UndecidedApp.Areas.Identity.Pages.Account
 {
@@ -135,7 +136,7 @@ namespace UndecidedApp.Areas.Identity.Pages.Account
 
                     if (Input.Email == "d4nielrocha@gmail.com")
                     {
-                        var role = await _roleManager.GetRoleNameAsync(new ApplicationRole() { Name = "ADMIN" });
+                        var role = await _roleManager.GetRoleNameAsync(new ApplicationRole() { Name = UndecidedEnums.Roles.Admin.ToString() });
                         if (role != null)
                         {
                             await _userManager.AddToRoleAsync(user, role);

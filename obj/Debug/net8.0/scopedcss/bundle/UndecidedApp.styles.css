@@ -226,9 +226,7 @@ header.masthead[b-99cpgfjb8h] {
         color: var(--bs-navbar-brand-hover-color);
     }
 
-
-
-    .navbar-nav[b-1pld9tu3me] {
+.navbar-nav[b-1pld9tu3me] {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight:;
@@ -654,7 +652,7 @@ header.masthead[b-99cpgfjb8h] {
         }
 
 .navbar-dark[b-1pld9tu3me] {
-    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-color: antiquewhite !important;
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
     --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
     --bs-navbar-active-color: #fff;
@@ -666,12 +664,13 @@ header.masthead[b-99cpgfjb8h] {
 
 
 #mainNav[b-1pld9tu3me] {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1030;
     border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -693,6 +692,18 @@ header.masthead[b-99cpgfjb8h] {
         text-transform: uppercase;
     }
 
+    .scrolled[b-1pld9tu3me]  {
+        background-color: rgb(255, 106, 0, 0.71);
+    }
+
+        [data-bs-theme="light"] .scrolled[b-1pld9tu3me] {
+            background-color: #3b6185 !important;
+        }
+
+        [data-bs-theme="dark"] .scrolled[b-1pld9tu3me] {
+            background-color: rgb(255, 106, 0) !important;
+        }
+
 
 
 @media (min-width: 992px) {
@@ -702,7 +713,7 @@ header.masthead[b-99cpgfjb8h] {
     }
 
         #mainNav .navbar-brand[b-1pld9tu3me] {
-            color: #fff;
+            color: antiquewhite;
         }
 
             #mainNav .navbar-brand:focus[b-1pld9tu3me], #mainNav .navbar-brand:hover[b-1pld9tu3me] {
@@ -710,7 +721,7 @@ header.masthead[b-99cpgfjb8h] {
             }
 
         #mainNav .navbar-nav > li.nav-item > a.nav-link[b-1pld9tu3me] {
-            color: #fff;
+            color: antiquewhite;
         }
 
             #mainNav .navbar-nav > li.nav-item > a.nav-link:focus[b-1pld9tu3me], #mainNav .navbar-nav > li.nav-item > a.nav-link:hover[b-1pld9tu3me] {

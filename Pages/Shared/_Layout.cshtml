@@ -1,9 +1,12 @@
 ﻿@using Microsoft.AspNetCore.Hosting
 @using Microsoft.AspNetCore.Mvc.ViewEngines
+@using Microsoft.JSInterop
 @using UndecidedApp.Services
+@using UndecidedApp.Shared
 @inject IWebHostEnvironment Environment
 @inject ICompositeViewEngine Engine
 @inject IColorModeService ColorModeService
+@inject IJSRuntime _js
 
 
 <!DOCTYPE html>
@@ -28,15 +31,17 @@
     </environment>
 </head>
 <body>
+
     <header class="masthead">
-        <nav class="navbar bg-dark navbar-expand-lg navbar-dark px-5" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5" id="mainNav">
             <div class="container-fluid px-4 px-lg-5">
                 <a class="navbar-brand" href="~/"><i class="fa-solid fa-arrows-to-circle fa-2x" style="color:darkorange">UD</i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarRespnsive">
                     @{
                         var result = Engine.FindView(ViewContext, "_LoginPartial", isMainPage: false);
                     }
@@ -77,6 +82,8 @@
     <environment include="Development">
         <script src="~/Identity/lib/jquery/dist/jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="~/js/ThemeToggler.js"></script>
+
         <script src="~/Identity/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
@@ -85,7 +92,7 @@
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
                 integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2">
-        </>
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
                 asp-fallback-src="~/Identity/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"

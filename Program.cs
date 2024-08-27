@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using UndecidedApp.Areas.Identity;
 using UndecidedApp.Data;
 using UndecidedApp.Data.Models.AuthModels;
+using UndecidedApp.Shared;
+using UndecidedApp;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -31,12 +33,12 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
     ).AddRoles<ApplicationRole>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
+builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<ApplicationUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<PostService>();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<IColorModeService, ColorModeService>();
-
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 
 builder.Services.AddAuthentication().AddGoogle(opt =>
 {
@@ -69,7 +71,10 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapControllers();
+//app.UseAntiforgery();
+
+//app.MapControllers();
+//app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 

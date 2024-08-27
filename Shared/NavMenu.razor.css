@@ -53,9 +53,7 @@
         color: var(--bs-navbar-brand-hover-color);
     }
 
-
-
-    .navbar-nav {
+.navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight:;
@@ -481,7 +479,7 @@
         }
 
 .navbar-dark {
-    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-color: antiquewhite !important;
     --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
     --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
     --bs-navbar-active-color: #fff;
@@ -493,12 +491,13 @@
 
 
 #mainNav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1030;
     border-bottom: 1px solid #dee2e6;
+    background-color: #fff;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -520,6 +519,18 @@
         text-transform: uppercase;
     }
 
+    .scrolled  {
+        background-color: rgb(255, 106, 0, 0.71);
+    }
+
+        [data-bs-theme="light"] .scrolled {
+            background-color: #3b6185 !important;
+        }
+
+        [data-bs-theme="dark"] .scrolled {
+            background-color: rgb(255, 106, 0) !important;
+        }
+
 
 
 @media (min-width: 992px) {
@@ -529,7 +540,7 @@
     }
 
         #mainNav .navbar-brand {
-            color: #fff;
+            color: antiquewhite;
         }
 
             #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -537,7 +548,7 @@
             }
 
         #mainNav .navbar-nav > li.nav-item > a.nav-link {
-            color: #fff;
+            color: antiquewhite;
         }
 
             #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {

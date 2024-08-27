@@ -32,5 +32,17 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.server.js"></script>
+
+     <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('#mainNav');
+            if (window.pageYOffset > 100) { // Adjust this value based on when you want the change to occur
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
 </body>
 </html>
