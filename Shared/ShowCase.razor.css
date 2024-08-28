@@ -1,0 +1,23 @@
+﻿
+
+.content {
+    padding-top: 0 !important;
+}
+
+
+@media (min-width: 641px){
+    .main > div {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    .p-xl-4 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}

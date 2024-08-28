@@ -520,7 +520,7 @@
     }
 
     .scrolled  {
-        background-color: rgb(255, 106, 0, 0.71);
+        background-color: rgb(255, 106, 0, 0.71) !important;
     }
 
         [data-bs-theme="light"] .scrolled {

@@ -1,0 +1,18 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <a class="nav-link px-lg-3 py-3 py-lg-4" href="Identity/Account/Manage">Hello, @context.User.Identity?.Name!</a>
+        <form method="post" action="Identity/Account/Logout">
+            <button type="submit" class="nav-link px-lg-3 py-3 py-lg-4 bg-transparent border-0">Log out</button>
+        </form>
+    </Authorized>
+    <NotAuthorized>
+        <NavLink href="Identity/Account/Register">Register</NavLink>
+        <NavLink href="Identity/Account/Login">Log in</NavLink>
+    </NotAuthorized>
+</AuthorizeView>
+<AuthorizeView Roles="Admin">
+    <Authorized>
+        <NavLink href="Identity/Account/CreateRole">Create Role</NavLink>
+    </Authorized>
+</AuthorizeView>
+<ThemeSwitch />

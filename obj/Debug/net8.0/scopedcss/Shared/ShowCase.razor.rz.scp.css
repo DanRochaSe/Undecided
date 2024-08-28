@@ -1,0 +1,23 @@
+
+
+.content[b-rg7o2tkhhp] {
+    padding-top: 0 !important;
+}
+
+
+@media (min-width: 641px){
+    .main > div[b-rg7o2tkhhp] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+
+@media (min-width: 1200px){
+
+    .p-xl-4[b-rg7o2tkhhp] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}

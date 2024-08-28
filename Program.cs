@@ -31,14 +31,18 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
         connectionStringDB,
         "DrTechDbMongo"
     ).AddRoles<ApplicationRole>();
+
+//Add blazor components
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+//
+
+//Services Scopes  
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<ApplicationUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<PostService>();
-builder.Services.AddMemoryCache();
 builder.Services.AddScoped<IColorModeService, ColorModeService>();
-builder.Services.AddRazorComponents().AddInteractiveServerComponents();
 
 builder.Services.AddAuthentication().AddGoogle(opt =>
 {
@@ -46,7 +50,9 @@ builder.Services.AddAuthentication().AddGoogle(opt =>
     opt.ClientSecret = configuration["GoogleAuth:ClientSecret"];
 
 });
+//
 
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 
@@ -71,9 +77,9 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-//app.UseAntiforgery();
+app.UseAntiforgery();
 
-//app.MapControllers();
+////app.MapControllers();
 //app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");

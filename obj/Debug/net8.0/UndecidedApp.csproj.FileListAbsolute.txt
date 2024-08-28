@@ -616,6 +616,7 @@ C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Sh
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\PostList.razor.rz.scp.css
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\Shared\ShowCase.razor.rz.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\bundle\UndecidedApp.styles.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\scopedcss\projectbundle\UndecidedApp.bundle.scp.css
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\Undecide.D6A398D2.Up2Date

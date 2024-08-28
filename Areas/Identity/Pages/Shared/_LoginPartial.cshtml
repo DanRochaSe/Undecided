@@ -1,8 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.JSInterop
 @using UndecidedApp.Data.Models.AuthModels
 @using UndecidedApp.Shared
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
+@inject IJSRuntime _jsRuntime   
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 

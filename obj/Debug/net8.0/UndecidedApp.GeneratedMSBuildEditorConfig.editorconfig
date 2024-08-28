@@ -58,16 +58,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5kZWNpZGVkUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/About.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQWJvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Hero.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVyby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Links.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTGlua3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/NewNav.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTmV3TmF2LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/PostCard.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvc3RDYXJkLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/ShowCase.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNob3dDYXNlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/SurveyPrompt.razor]
@@ -97,6 +109,10 @@ build_metadata.AdditionalFiles.CssScope = b-1pld9tu3me
 [C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/PostList.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvc3RMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-1dcmo8wov4
+
+[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/ShowCase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNob3dDYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-rg7o2tkhhp
 
 [C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s

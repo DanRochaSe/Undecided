@@ -1,30 +1,26 @@
 ﻿@using UndecidedApp.Services
 
-
-
 @inject IColorModeService ColorModeService
 @inject IJSRuntime JS
 
 
-
-
-<div class="nav-item px-3">
+<div class="nav-item px-3" id="themeSwitch">
     @if (CurrentTheme == "dark")
     {
-        <button class="btn btn-primary" @onclick="@(() => ToggleTheme())">
-            <i class="fas fa-sun"></i> Light
+        <button class="btn border-0" @onclick="@(() => ToggleTheme())">
+            <i class="fas fa-sun fa-2x" style="color: white !important;"></i>
         </button>
     }
     else
     {
-        <button class="btn btn-primary" @onclick="@(() => ToggleTheme())">
-            <i class="fas fa-moon"></i> Dark
+        <button class="btn border-0" @onclick="@(() => ToggleTheme())">
+            <i class="fas fa-moon fa-2x" style="color: black !important;"></i>
         </button>
     }
 </div>
 
 @code {
-    private string CurrentTheme = "light";   
+    private string CurrentTheme = "dark";   
     private bool _firstRender = true;
 
 
@@ -33,7 +29,7 @@
         if (firstRender)
         {
             var savedTheme = await JS.InvokeAsync<string>("localStorage.getItem", "theme");
-            CurrentTheme = string.IsNullOrEmpty(savedTheme) ? "light" : savedTheme;
+            CurrentTheme = string.IsNullOrEmpty(savedTheme) ? "dark" : savedTheme;
             //ColorModeService.SetCurrentColorMode(CurrentTheme);
             await JS.InvokeVoidAsync("SetTheme", CurrentTheme);
             _firstRender = false;
