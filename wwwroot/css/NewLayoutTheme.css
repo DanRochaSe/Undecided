@@ -129,6 +129,10 @@ h6 {
         animation: php-email-form-loading 1s linear infinite;
     }
 
+
+
+
+
 @keyframes php-email-form-loading {
     0% {
         transform: rotate(0deg);
@@ -214,6 +218,7 @@ h6 {
     --background-color: rgba(0, 0, 0, 0.8);
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -235,11 +240,14 @@ h6 {
             position: relative;
         }
 
+        
+
         .navmenu a,
-        .navmenu a:focus {
+        .navmenu a:focus,
+        .logoutBtn{
             color: var(--nav-color);
             padding: 18px 15px;
-            font-size: 13px;
+            font-size: 1.125rem;
             text-transform: uppercase;
             font-family: var(--nav-font);
             font-weight: 400;
@@ -301,7 +309,10 @@ h6 {
 
                 .navmenu .dropdown ul a:hover,
                 .navmenu .dropdown ul .active:hover,
-                .navmenu .dropdown ul li:hover > a {
+                .navmenu .dropdown ul li:hover > a,
+                .nav-item a:hover,
+                .nav-item button:hover,
+                .nav-link:hover{
                     color: var(--nav-dropdown-hover-color);
                 }
 
@@ -644,6 +655,7 @@ section,
     padding: 60px 0;
     scroll-margin-top: 80px;
     overflow: clip;
+    min-height: 90vh;
 }
 
 @media (max-width: 1199px) {

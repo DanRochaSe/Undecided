@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DN4WusGWIVU+JYKyocBNS/mDo8+4EH3kxtS8lyRAMl4=",
+  "Hash": "fW8Rwun6JKRjRiflTB6RAfhyr6ajHtFAuQx6DKJLpgA=",
   "Source": "UndecidedApp",
   "BasePath": "_content/UndecidedApp",
   "Mode": "Default",
@@ -1480,12 +1480,12 @@
       "OriginalItemSpec": "wwwroot\\images\\hero-bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\profile-img.jfif",
+      "Identity": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\profile-img.jpg",
       "SourceId": "UndecidedApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\",
       "BasePath": "_content/UndecidedApp",
-      "RelativePath": "images/profile-img.jfif",
+      "RelativePath": "images/profile-img.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1496,7 +1496,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\profile-img.jfif"
+      "OriginalItemSpec": "wwwroot\\images\\profile-img.jpg"
     },
     {
       "Identity": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\undecided1.jpg",

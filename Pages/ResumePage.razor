@@ -1,0 +1,30 @@
+﻿@page "/Resume"
+
+@using UndecidedApp.Data
+@using UndecidedApp.Data.Models.PostModels
+@using MongoDB.Bson
+@using UndecidedApp.Services
+@using UndecidedApp.Shared
+@using UndecidedApp.Shared.Components
+@inject IJSRuntime JS
+
+<About />
+<Resume />
+
+
+
+@code{
+
+    private string Section = "about";
+    private bool _firstRender = true;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("scrollSectionIntoView", Section);
+
+    }
+
+
+}
+
+

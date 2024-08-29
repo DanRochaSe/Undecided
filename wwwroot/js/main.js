@@ -199,6 +199,16 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+    document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+function scrollSectionIntoView(section) {
+    debugger;
+    const targetSection = document.getElementById(section);
+
+    if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}

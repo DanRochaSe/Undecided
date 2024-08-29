@@ -112,13 +112,36 @@ header.masthead {
     font-size: 1.5rem !important;
 }
 
+.hero{
+    background-image: url(/images/hero-bg.jpg);
+    background-size: cover;
+}
+
 
 [data-bs-theme="light"] {
     --bs-body-color: #0d5e8de4 !important;
+
 }
 
-[data-bs-theme="dark"] {
-    --bs-body-color: black !important;
-    --bs-ud-content: rgba(0,0,0,0.8) !important;
-}
+    [data-bs-theme="light"] .hero {
+        background-image: url(/images/hero-bg.jpg);
+        background-size: cover;
+        filter: invert(0.85) !important;
+    }
+
+    [data-bs-theme="light"] .sitename ,
+    [data-bs-theme="light"] .navmenu a,
+    [data-bs-theme="light"] .fa-linkedin {
+        color: darkorange !important;
+    }
+
+
+
+
+
+
+        [data-bs-theme="dark"] {
+            --bs-body-color: black !important;
+            --bs-ud-content: rgba(0,0,0,0.8) !important;
+        }
 
