@@ -22,14 +22,6 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-       @*       <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-            </ul><!-- End Portfolio Filters --> *@
-
             <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                 @if (posts == null)
@@ -45,16 +37,19 @@
                             <NavLink href="@($"post/{post?.PostID}")" Match="NavLinkMatch.Prefix" style="text-decoration: none; color: black;">
 
                                 <div class="portfolio-content h-100">
-                                    <img src="/images//profile-img.jpg" class="img-fluid" alt="">
-                                    <div class="portfolio-info">
-                                        <h3 class="card-title">@post.Title.ToString()<i class="fa-solid fa-fire" style="float: right; color: red !important;"></i></h3><br />
-                                        <p class="card-text" style="font-weight: 500; font-size: 1.125rem;">@post.PostBody.ToString().Substring(0, 30)</p>
-                                        <p class="card-text"><i class="fa-solid fa-tag"></i> @post.Tags[1].ToString()</p>
-                                       @*  <div style="display: flex; justify-content: space-between; font-style: italic;">
-                                            <p class="card-text">Author: @post?.AuthorName?.ToString()</p>
-                                            <p class="card-text" style="float: right;">Created At: @post?.CreatedAt.ToString("dd/MM/yyyy")</p>
+                                    <div class="row" style="padding: 5px; max-height: 380px;">
+                                            <img src="/images//profile-img.jpg" class="img-fluid" alt="">
+                                            <div class="portfolio-info">
+                                                <h3 class="card-title" style="color: DarkOrange !important; text-align: center;">@post?.Title.ToString()<i class="fa-solid fa-fire" style="float: right; color: red !important;"></i></h3><br />
+                                                <p class="card-text" style="font-weight: 500; font-size: 1.125rem; margin-bottom: 2rem;">@post?.PostBody.ToString().Substring(0, 30)</p>
+                                                <p class="card-text" style="position: absolute; bottom: 0; text-align: end; margin-right: 10px;"><i class="fa-solid fa-tag"></i> @post?.Tags[1].ToString()</p>
+                                                @*  <div style="display: flex; justify-content: space-between; font-style: italic;">
+                                        <p class="card-text">Author: @post?.AuthorName?.ToString()</p>
+                                        <p class="card-text" style="float: right;">Created At: @post?.CreatedAt.ToString("dd/MM/yyyy")</p>
                                         </div> *@
+                                        </div>
                                     </div>
+                                   
                                 </div>
                             </NavLink>
 
@@ -79,7 +74,9 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await JS.InvokeVoidAsync("scrollSectionIntoView", Section);
+   
+         await JS.InvokeVoidAsync("scrollSectionIntoView", Section);
+   
 
     }
 
