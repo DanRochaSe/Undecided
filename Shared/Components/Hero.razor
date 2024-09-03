@@ -1,14 +1,21 @@
-﻿<section id="hero" class="hero section dark-background">
+﻿@using UndecidedApp.Shared.Components
+
+@inject NavigationManager navManager
+
+<section id="hero" class="hero section dark-background">
 
 @*     <img src="/images/hero-bg.jpg" alt="" data-aos="fade-in">
  *@
     <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <h2>Daniel Rocha</h2>
         <p>SOFTWARE ENGINEER SHOWCASE</p>
-        <a href="/Resume" class="btn-scroll" title="Scroll Down"><i class="fas fa-chevron-down"></i></a>
+        @* <a href="/resume" class="btn-scroll" title="Scroll Down"><i class="fas fa-chevron-down"></i></a> *@
+        <Scroller Section="/resume" />
     </div>
 
 </section>
+
 @code {
+   
 
 }

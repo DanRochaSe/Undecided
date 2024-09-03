@@ -15,12 +15,18 @@
 
 @code{
 
-    private string Section = "resume";
+    private string Section = "about";
     private bool _firstRender = true;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await JS.InvokeVoidAsync("scrollSectionIntoView", Section);
+
+    }
+
+    protected override void OnParametersSet()
+    {
+        JS.InvokeVoidAsync("scrollSectionIntoView", Section);
 
     }
 

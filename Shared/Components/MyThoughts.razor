@@ -68,17 +68,19 @@
 @code {
     private IEnumerable<Post>? posts;
 
-
-    private string Section = "thoughts";
-    private bool _firstRender = true;
-
+      
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-   
-         await JS.InvokeVoidAsync("scrollSectionIntoView", Section);
-   
+        await JS.InvokeVoidAsync("scrollToHeight");
 
     }
+
+    protected override void OnParametersSet()
+    {
+        JS.InvokeVoidAsync("scrollToHeight");
+
+    }
+
 
     protected override async Task OnInitializedAsync()
     {

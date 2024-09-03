@@ -314,16 +314,6 @@ H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
 H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.dll
 H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\refint\UndecidedApp.dll
 H:\My Drive\2024\UndecidedApp\obj\Debug\net8.0\UndecidedApp.pdb
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.AssemblyReference.cache
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfoInputs.cache
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfo.cs
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.CoreCompileInputs.cache
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cache
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cs
-C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\appsettings.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\UndecidedApp.staticwebassets.runtime.json
@@ -605,6 +595,16 @@ C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\runtimes\win
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.AssemblyReference.cache
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfoInputs.cache
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.AssemblyInfo.cs
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.csproj.CoreCompileInputs.cache
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cache
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.RazorAssemblyInfo.cs
+C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\UndecidedApp.sourcelink.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\obj\Debug\net8.0\staticwebassets\msbuild.UndecidedApp.Microsoft.AspNetCore.StaticWebAssets.props

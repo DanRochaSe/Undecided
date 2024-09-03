@@ -212,3 +212,12 @@ function scrollSectionIntoView(section) {
         targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 }
+
+
+function scrollToHeight() {
+    window.scrollTo({
+        top: window.innerHeight * 1.01,
+        behavior: 'smooth'
+    })
+}
+

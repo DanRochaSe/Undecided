@@ -10,6 +10,7 @@ using UndecidedApp.Data;
 using UndecidedApp.Data.Models.AuthModels;
 using UndecidedApp.Shared;
 using UndecidedApp;
+using UndecidedApp.Helper;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -43,6 +44,7 @@ builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuth
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<PostService>();
 builder.Services.AddScoped<IColorModeService, ColorModeService>();
+builder.Services.AddScoped<NavigationHelper>();
 
 builder.Services.AddAuthentication().AddGoogle(opt =>
 {

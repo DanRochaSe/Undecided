@@ -1,0 +1,16 @@
+﻿@using UndecidedApp.Helper
+
+@inject IJSRuntime JS
+@inject NavigationHelper navHelper
+
+<a @onclick="Navigate" class="btn-scroll" title="Scroll Down"><i class="fas fa-chevron-down"></i></a>
+
+@code {
+    [Parameter]
+    public string Section { get; set; } = "/resume";
+
+    public void Navigate() => navHelper.NavigateToPage(Section);
+
+
+
+}
