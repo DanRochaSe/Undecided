@@ -48,7 +48,7 @@ namespace UndecidedApp.Services
                 return posts;
             }
 
-            IEnumerable<Post> postList  =  await _dbContext.Post.OrderBy(p => p.PostID).AsNoTracking().ToListAsync<Post>();
+            IEnumerable<Post> postList  =  await _dbContext.Post.OrderByDescending(p => p.CreatedAt).ToListAsync<Post>();
             _cache["posts"] = postList;
 
             return postList;

@@ -1,0 +1,90 @@
+﻿@page "/newpost"
+
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Authorization
+@using UndecidedApp.Data.Models.PostModels
+@using UndecidedApp.Pages
+@using UndecidedApp.Services
+@using UndecidedApp.Shared
+
+@inject PostService postServices;
+@inject IJSRuntime JS
+
+
+
+@attribute [Authorize(Roles = "Admin")]
+<div style="min-height:85vh; background-color: lightgrey; padding: 10px;">
+
+    <h2>Create new post</h2>
+
+<form class="row g-3 p-5 needs-validation" novalidate @onsubmit="@HandleSubmit">
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">Title</label>
+    <input type="text" class="form-control" id="validationCustom01" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Tags</label>
+    <input type="text" class="form-control" id="validationCustom02" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-12">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <textarea rows="15" cols="1" required @bind="@post.PostBody" style="width: 100%;" placeholder="Type here..." ></textarea>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom03" class="form-label">City</label>
+    <InputFile OnChange="HandleFileUpload" accept=".jpg,.jiff,.jpeg,.bpg" />
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+</div>
+@code {
+
+    private Post post = new Post();
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("scrollToHeight");
+
+    }
+
+    protected override void OnParametersSet()
+    {
+        JS.InvokeVoidAsync("scrollToHeight");
+
+    }
+
+    private void HandleFileUpload(InputFileChangeEventArgs e)
+    {
+        var x = $"File uploaded: {Path.Combine(Directory.GetCurrentDirectory(), e.File.Name)}";
+
+        // You can add more logic here to process the uploaded file
+    }
+
+
+    protected void HandleSubmit()
+    {
+        var x = post.PostBody;
+
+    }
+
+}
