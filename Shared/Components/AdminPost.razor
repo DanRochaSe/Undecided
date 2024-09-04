@@ -9,7 +9,7 @@
 
 @inject PostService postServices;
 @inject IJSRuntime JS
-
+@inject ImageUploader _imgUploader
 
 
 @attribute [Authorize(Roles = "Admin")]
@@ -44,10 +44,17 @@
   <div class="col-md-4">
     <label for="validationCustom03" class="form-label">City</label>
     <InputFile OnChange="HandleFileUpload" accept=".jpg,.jiff,.jpeg,.bpg" />
+    <button type="submit" @onclick="UploadImage">Upload Image</button>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
+  <div class="col-md-4">
+      @if (!string.IsNullOrEmpty(_imagePath))
+            {
+                <img src="@_imagePath" alt="Uploaded Image" style="width: 100px; height: 100px;" />
+            }
+        </div>
 
 
 
@@ -57,9 +64,11 @@
 </form>
 
 </div>
-@code {
+    @code {
 
     private Post post = new Post();
+    private IBrowserFile _file;
+    private string _imagePath;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -73,11 +82,19 @@
 
     }
 
-    private void HandleFileUpload(InputFileChangeEventArgs e)
+    public void HandleFileUpload(InputFileChangeEventArgs file)
     {
-        var x = $"File uploaded: {Path.Combine(Directory.GetCurrentDirectory(), e.File.Name)}";
+        _file = file.File;
 
-        // You can add more logic here to process the uploaded file
+    }
+
+    public async Task UploadImage()
+    {
+        if(_file != null)
+        {
+            _imagePath = await _imgUploader.UploadImage(_file);
+            StateHasChanged();
+        }
     }
 
 

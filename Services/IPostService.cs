@@ -20,7 +20,6 @@ namespace UndecidedApp.Services
 
         void DeletePost(Post postToDelete);
 
-        
 
     }
 }

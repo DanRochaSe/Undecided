@@ -19,9 +19,14 @@ body::-webkit-scrollbar{
     background-color: var(--bs-ud-content);
 }
 
-h1:focus {
-    outline: none;
-}
+    .main > div{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    h1:focus {
+        outline: none;
+    }
 
 a, .btn-link {
     color: #0071c1;
@@ -38,8 +43,8 @@ a, .btn-link {
 }
 
 .content {
-/*    padding-top: 1.1rem;
-*/}
+    padding: 0 !important;
+}
 
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
@@ -129,19 +134,40 @@ header.masthead {
         filter: invert(0.85) !important;
     }
 
-    [data-bs-theme="light"] .sitename ,
+    [data-bs-theme="light"] .sitename,
     [data-bs-theme="light"] .navmenu a,
-    [data-bs-theme="light"] .fa-linkedin {
+    [data-bs-theme="light"] .fa-linkedin,
+    [data-bs-theme="light"] .logoutBtn
+    {
         color: darkorange !important;
     }
 
+[data-bs-theme="dark"] .section
+ {
+    background-color: rgba(0,0,0,0.75) !important;
+    color: antiquewhite !important;
+}
+
+[data-bs-theme="dark"] .description-title{
+    color: rgba(255,255,255,0.3);
+}
+
+[data-bs-theme="dark"] .section-title > h2 {
+    color: darkorange;
+}
+
+[data-bs-theme="dark"] .aos-init > h3,
+[data-bs-theme="dark"] .aos-init > .resume-item > h4 {
+    color: darkorange;
+}
 
 
 
 
 
-        [data-bs-theme="dark"] {
-            --bs-body-color: black !important;
-            --bs-ud-content: rgba(0,0,0,0.8) !important;
-        }
+
+[data-bs-theme="dark"] {
+    --bs-body-color: black !important;
+    --bs-ud-content: rgba(0,0,0,0.8) !important;
+}
 

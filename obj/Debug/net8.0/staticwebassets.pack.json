@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\images\\hero-bg.jpg"
     },
     {
+      "Id": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\post\\29f51f3c-d633-4ccf-8802-d0c11a720efd.jpg",
+      "PackagePath": "staticwebassets\\images\\post\\29f51f3c-d633-4ccf-8802-d0c11a720efd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\post\\b27f7de9-0cca-411c-a558-eba2438c84d9.jfif",
+      "PackagePath": "staticwebassets\\images\\post\\b27f7de9-0cca-411c-a558-eba2438c84d9.jfif"
+    },
+    {
       "Id": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\wwwroot\\images\\profile-img.jpg",
       "PackagePath": "staticwebassets\\images\\profile-img.jpg"
     },

@@ -45,6 +45,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<PostService>();
 builder.Services.AddScoped<IColorModeService, ColorModeService>();
 builder.Services.AddScoped<NavigationHelper>();
+builder.Services.AddScoped<ImageUploader>();
 
 builder.Services.AddAuthentication().AddGoogle(opt =>
 {

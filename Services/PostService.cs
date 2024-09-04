@@ -55,20 +55,12 @@ namespace UndecidedApp.Services
 
         }
 
-        public async Task<Post> GetPostById(ObjectId id)
+        public async Task<Post?> GetPostById(ObjectId id)
         {
             return await _dbContext.Post.FindAsync(id);
     
         }
 
-        Task<IEnumerable<Post>> IPostService.GetAllPost()
-        {
-            throw new System.NotImplementedException();
-        }
 
-        Task<Post> IPostService.GetPostById(ObjectId id)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
