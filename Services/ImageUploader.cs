@@ -28,21 +28,13 @@ namespace UndecidedApp.Services
                 return null;
             }
 
-            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.Name);
-            var filePath = Path.Combine(_imageFolder, fileName);
-
-
             try
             {
-
+                var filePath = Path.Combine(_imageFolder, file.Name);
                 using var outputStream = new FileStream(filePath, FileMode.Create);
                 await file.OpenReadStream().CopyToAsync(outputStream);
 
-                //using var reader = new StreamReader(file.OpenReadStream());
-                //var content = await reader.ReadToEndAsync();
-
-                //await File.WriteAllBytesAsync(filePath, Convert.FromBase64String(content));
-                var imagePath = $"images/post/{fileName}";
+                var imagePath = $"images/post/{file.Name}";
 
                 return imagePath;
             }
@@ -52,20 +44,7 @@ namespace UndecidedApp.Services
 
             }
 
-            //try
-            //{
-            //    await file.CopyToAsync(new FileStream(filePath, FileMode.Create));
-
-
-            //    var imagePath = $"images/post/{fileName}";
-
-
-            //    return imagePath;
-
-            //}catch(Exception ex)
-            //{
-            //    return $"Error uploading the image. Reason:  {ex.Message}";
-            //}
+        
         }
 
     }

@@ -22,11 +22,11 @@ namespace UndecidedApp.Data.Models.PostModels
 
         public string PostBody { get; set; }
 
-        public IList<string> Tags { get; set; }
+        public IList<string>? Tags { get; set; }
 
         public float? Rating { get; set; } = 0.0f;
 
-        public int? AuthorID { get; set; } = 0;
+        public Guid? AuthorID { get; set; } = new Guid();
 
         public string? CoverImageURL { get; set; } = string.Empty;
 

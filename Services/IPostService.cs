@@ -14,7 +14,7 @@ namespace UndecidedApp.Services
 
         Task<Post?> GetPostById(ObjectId id);
 
-        void AddPost(Post newPost);
+        Task<ObjectId?> AddPost(Post newPost);
 
         void EditPost(Post updatePost);
 

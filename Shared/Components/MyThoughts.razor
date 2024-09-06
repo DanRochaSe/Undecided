@@ -51,7 +51,7 @@
                                             <div class="portfolio-info">
                                                 <h3 class="card-title" style="color: DarkOrange !important; text-align: center;">@post?.Title.ToString()<i class="fa-solid fa-fire" style="float: right; color: red !important;"></i></h3><br />
                                                 <p class="card-text" style="font-weight: 500; font-size: 1.125rem; margin-bottom: 2rem;">@post?.PostBody.ToString().Substring(0, 30)</p>
-                                                <p class="card-text" style="position: absolute; bottom: 0; text-align: end; margin-right: 10px;"><i class="fa-solid fa-tag"></i> @post?.Tags[1].ToString()</p>
+                                                @* <p class="card-text" style="position: absolute; bottom: 0; text-align: end; margin-right: 10px;"><i class="fa-solid fa-tag"></i>@post?.Tags[1].ToString()</p> *@
                                         </div>
                                     </div>
                                    
@@ -68,9 +68,6 @@
         </div>
 
     </div>
-
-    <button @onclick=AddPost>Add Post</button>
-
 
 
 </section><!-- /Portfolio Section -->

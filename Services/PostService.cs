@@ -23,11 +23,14 @@ namespace UndecidedApp.Services
             _dbContext = dbContext;
         }
 
-        public void AddPost(Post newPost)
+        public async Task<ObjectId?> AddPost(Post newPost)
         {
-            _dbContext.Post.Add(newPost);
+            await _dbContext.Post.AddAsync(newPost);
             _dbContext.ChangeTracker.DetectChanges();
             _dbContext.SaveChanges();
+            _cache.Remove("posts");
+
+            return newPost.PostID;
         }
 
         public void DeletePost(Post postToDelete)

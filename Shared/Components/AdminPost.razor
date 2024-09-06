@@ -2,25 +2,49 @@
 
 @using Microsoft.AspNetCore.Authentication
 @using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using System.Security.Claims
+@using UndecidedApp.Data.Models.AuthModels
 @using UndecidedApp.Data.Models.PostModels
 @using UndecidedApp.Pages
 @using UndecidedApp.Services
 @using UndecidedApp.Shared
+@using AspNetCore.Identity.MongoDbCore.Models;
+
 
 @inject PostService postServices;
 @inject IJSRuntime JS
 @inject ImageUploader _imgUploader
-
+@inject UserManager<ApplicationUser> userManager
+@inject SignInManager<ApplicationUser> signInManager
+@inject AuthenticationStateProvider authProvider
 
 @attribute [Authorize(Roles = "Admin")]
 <div style="min-height:85vh; background-color: lightgrey; padding: 10px;">
+
+    @if (isPostAdded)
+    {
+        @if (isSuccess)
+        {
+            <div class="alert alert-success" role="alert">
+                Post added successfully!
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger" role="alert">
+                An error occured while trying to add your post. Please try again!
+            </div>
+        }
+    }
+
 
     <h2>Create new post</h2>
 
 <form class="row g-3 p-5 needs-validation" novalidate @onsubmit="@HandleSubmit">
   <div class="col-md-6">
     <label for="validationCustom01" class="form-label">Title</label>
-    <input type="text" class="form-control" id="validationCustom01" required>
+    <input type="text" class="form-control" @bind="@post.Title" id="validationCustom01" required>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -33,9 +57,9 @@
     </div>
   </div>
   <div class="col-md-12">
-    <label for="validationCustomUsername" class="form-label">Username</label>
+    <label for="validationCustomUsername" class="form-label">Post</label>
     <div class="input-group has-validation">
-      <textarea rows="15" cols="1" required @bind="@post.PostBody" style="width: 100%;" placeholder="Type here..." ></textarea>
+      <textarea rows="15" cols="1" id="txtPost" required @bind="@post.PostBody" style="width: 100%;" placeholder="Type here..." ></textarea>
       <div class="invalid-feedback">
         Please choose a username.
       </div>
@@ -43,18 +67,21 @@
   </div>
   <div class="col-md-4">
     <label for="validationCustom03" class="form-label">City</label>
-    <InputFile OnChange="HandleFileUpload" accept=".jpg,.jiff,.jpeg,.bpg" />
+@*             <InputFile OnChange="HandleFileUpload" accept=".jpg,.jiff,.jpeg,.bpg" />*@
+        <InputFile OnChange="HandleFileUpload" id="inputFileImage" accept=".jpg,.jiff,.jpeg,.bpg" />
     <button type="submit" @onclick="UploadImage">Upload Image</button>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
-  <div class="col-md-4">
+@*   <div class="col-md-4">
       @if (!string.IsNullOrEmpty(_imagePath))
             {
-                <img src="@_imagePath" alt="Uploaded Image" style="width: 100px; height: 100px;" />
+                <img src="@_imagePath" alt="Uploaded Image" draggable="true" style="width: 100px; height: 100px;" />
             }
-        </div>
+        </div> *@
+
+        <div class="col-md-4" id=imageContainer></div>
 
 
 
@@ -64,32 +91,53 @@
 </form>
 
 </div>
-    @code {
+@code {
 
     private Post post = new Post();
-    private IBrowserFile _file;
-    private string _imagePath;
+    private IBrowserFile? _file;
+    private string? _imagePath;
+    private ApplicationUser? user;
+    private bool isPostAdded = false;
+    private bool isSuccess = false;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         await JS.InvokeVoidAsync("scrollToHeight");
+        await JS.InvokeVoidAsync("imageDragDrop.handleTextAreaDrop", "txtPost");
+        // await JS.InvokeVoidAsync("imageDragDrop.createDraggableImage", "inputFileImage", "imageContainer");
 
     }
 
-    protected override void OnParametersSet()
+    protected override async Task OnInitializedAsync()
     {
-        JS.InvokeVoidAsync("scrollToHeight");
+        var authState = await authProvider.GetAuthenticationStateAsync();
+        ClaimsPrincipal? userClaims = authState.User;
 
+        if (userClaims.Identity.IsAuthenticated)
+        {
+            user = await userManager.GetUserAsync(userClaims);
+        }
     }
 
-    public void HandleFileUpload(InputFileChangeEventArgs file)
+    protected override void OnParametersSet() => JS.InvokeVoidAsync("scrollToHeight");
+
+
+    public async void HandleFileUpload(InputFileChangeEventArgs file)
     {
+
         _file = file.File;
+
+        var fileName = _file.Name;
+
+        _imagePath = await _imgUploader.UploadImage(_file);
+        await JS.InvokeVoidAsync("imageDragDrop.addImage", _imagePath);
+
 
     }
 
     public async Task UploadImage()
     {
+
         if(_file != null)
         {
             _imagePath = await _imgUploader.UploadImage(_file);
@@ -98,9 +146,24 @@
     }
 
 
-    protected void HandleSubmit()
+    protected async void HandleSubmit()
     {
-        var x = post.PostBody;
+        post.AuthorName = user?.UserName;
+        post.AuthorID = user?.Id;
+        post.CoverImageURL = _imagePath?.ToString();
+
+        var postId = await postServices.AddPost(post);
+        if(postId != null)
+        {
+            isPostAdded = true;
+            isSuccess = true;
+        }
+        else
+        {
+            isSuccess = false;
+        }
+
+
 
     }
 

@@ -221,3 +221,85 @@ function scrollToHeight() {
     })
 }
 
+window.imageDragDrop = {
+
+
+    addImage: function (fileName) {
+        const imageContainer = document.getElementById('imageContainer');
+
+        const img = document.createElement('img');
+        img.src = `${fileName}`;
+        img.draggable = true;
+        img.style.width = '100px';
+        img.style.height = '100px';
+        img.src = img.src.replace(window.location.origin, '');
+
+
+        img.addEventListener('dragstart', function (event) {
+            if (!event.dataTransfer.getData('text/html')) {
+                event.dataTransfer.setData('text/html', `<img src="${fileName}" alt="Uploaded Image" />`);
+            }
+        });
+
+        imageContainer.appendChild(img);
+    },
+
+    handleTextAreaDrop: function (textAreaId) {
+        const textArea = document.getElementById(textAreaId);
+
+        textArea.addEventListener('dragover', function (event) {
+            event.preventDefault(); // Allow drop
+        });
+
+        textArea.addEventListener('drop', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const imageTag = event.dataTransfer.getData('text/html');
+            if (imageTag && !textArea.value.includes(imageTag)) {
+                textArea.value += imageTag;
+            }
+        });
+    }
+
+    //createDraggableImage: function (inputElementId, imageContainerId) {
+    //    debugger;
+    //    const imageContainer = document.getElementById(imageContainerId);
+    //    const inputElement = document.getElementById(inputElementId);
+    //    inputElement.addEventListener('change', function (event) {
+    //        const file = event.target.files[0];
+    //        if (file) {
+    //            const reader = new FileReader();
+    //            reader.onload = function (e) {
+    //                const img = document.createElement("img");
+    //                img.src = e.target.result;
+    //                img.draggable = true;
+    //                img.style.width = '100px';
+    //                img.style.height = '100px';
+    //                img.addEventListener('dragstart', function (event) {
+    //                    event.dataTransfer.setData('text/plain', file.name);
+    //                });
+    //                imageContainer.appendChild(img);
+    //            }
+    //            reader.readAsDataURL(file);
+    //        }
+    //    });
+    //},
+
+    //handleTextAreaDrop: function (textAreaId) {
+    //    debugger;
+    //const textArea = document.getElementById(textAreaId)
+
+    //    textArea.addEventListener('dragover', function (event) {
+    //        event.preventDefault();
+    //    });
+
+    //    textArea.addEventListener('drop', function (event) {
+    //        event.preventDefault();
+    //        const fileName = event.dataTransfer.getData('text/plain');
+    //        const imageTag = `<img src="/images/post/${fileName}" alt="Uploaded Image" />`;
+    //        textArea.value += imageTag;
+    //    });
+    //}
+}
+
+
