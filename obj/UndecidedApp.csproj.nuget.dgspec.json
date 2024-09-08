@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj": {}
+    "C:\\Users\\d4nie\\OneDrive\\Documents\\2024\\UndecidedApp\\Undecided\\UndecidedApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj": {
+    "C:\\Users\\d4nie\\OneDrive\\Documents\\2024\\UndecidedApp\\Undecided\\UndecidedApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj",
+        "projectUniqueName": "C:\\Users\\d4nie\\OneDrive\\Documents\\2024\\UndecidedApp\\Undecided\\UndecidedApp.csproj",
         "projectName": "UndecidedApp",
-        "projectPath": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\UndecidedApp.csproj",
-        "packagesPath": "C:\\Users\\DanielRocca\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DanielRocca\\Documents\\Daniel\\UndecidedApp\\obj\\",
+        "projectPath": "C:\\Users\\d4nie\\OneDrive\\Documents\\2024\\UndecidedApp\\Undecided\\UndecidedApp.csproj",
+        "packagesPath": "C:\\Users\\d4nie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\d4nie\\OneDrive\\Documents\\2024\\UndecidedApp\\Undecided\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DanielRocca\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\d4nie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -17,235 +17,235 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UndecidedApp
 build_property.RootNamespace = UndecidedApp
-build_property.ProjectDir = C:\Users\DanielRocca\Documents\Daniel\UndecidedApp\
+build_property.ProjectDir = C:\Users\d4nie\OneDrive\Documents\2024\UndecidedApp\Undecided\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DanielRocca\Documents\Daniel\UndecidedApp
+build_property.MSBuildProjectDirectory = C:\Users\d4nie\OneDrive\Documents\2024\UndecidedApp\Undecided
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/App.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Contact.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Contact.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Counter.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/FetchData.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Index.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/PostDetails.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/PostDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/ResumePage.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/ResumePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdW1lUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Thoughts.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Thoughts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhvdWdodHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/UndecidedPost.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/UndecidedPost.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5kZWNpZGVkUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/About.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/About.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/AdminPost.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/AdminPost.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcQWRtaW5Qb3N0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Hero.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/Hero.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcSGVyby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Links.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/Links.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTGlua3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/MyThoughts.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/MyThoughts.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTXlUaG91Z2h0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/NewNav.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/NewNav.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcTmV3TmF2LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Resume.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/Resume.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcUmVzdW1lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Components/Scroller.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Components/Scroller.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBvbmVudHNcU2Nyb2xsZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/LoginDisplay.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/PostCard.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/PostCard.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvc3RDYXJkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/SurveyPrompt.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/ThemeSwitch.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/ThemeSwitch.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRoZW1lU3dpdGNoLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/_Imports.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/Header.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/Header.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-99cpgfjb8h
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/MainLayout.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-f51ov7t8a5
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/NavMenu.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-1pld9tu3me
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/PostList.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/PostList.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBvc3RMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-1dcmo8wov4
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Shared/ShowCase.razor]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Shared/ShowCase.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNob3dDYXNlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-rg7o2tkhhp
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/CreateRole.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/CreateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDcmVhdGVSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/ExternalLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxFeHRlcm5hbExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Lockout.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Lockout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/LogOut.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/LogOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW5hYmxlQXV0aGVudGljYXRvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/About.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Contact.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Error.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Shared/_Layout.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/_Host.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DanielRocca/Documents/Daniel/UndecidedApp/Pages/_ViewImports.cshtml]
+[C:/Users/d4nie/OneDrive/Documents/2024/UndecidedApp/Undecided/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

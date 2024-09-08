@@ -205,7 +205,6 @@
 
 
 function scrollSectionIntoView(section) {
-    debugger;
     const targetSection = document.getElementById(section);
 
     if (targetSection) {
@@ -232,12 +231,11 @@ window.imageDragDrop = {
         img.draggable = true;
         img.style.width = '100px';
         img.style.height = '100px';
-        img.src = img.src.replace(window.location.origin, '');
 
 
         img.addEventListener('dragstart', function (event) {
             if (!event.dataTransfer.getData('text/html')) {
-                event.dataTransfer.setData('text/html', `<img src="${fileName}" alt="Uploaded Image" />`);
+                event.dataTransfer.setData('text/html', `<img src="${fileName.replace(window.location.origin,'')}" alt="Uploaded Image" />`);
             }
         });
 

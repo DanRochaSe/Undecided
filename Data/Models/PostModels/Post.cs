@@ -30,6 +30,8 @@ namespace UndecidedApp.Data.Models.PostModels
 
         public string? CoverImageURL { get; set; } = string.Empty;
 
+        public List<string>? PostImages { get; set; } = null;
+
         public string? AuthorName { get; set; } = String.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

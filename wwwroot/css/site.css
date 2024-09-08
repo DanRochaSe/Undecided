@@ -152,7 +152,8 @@ header.masthead {
     color: rgba(255,255,255,0.3);
 }
 
-[data-bs-theme="dark"] .section-title > h2 {
+[data-bs-theme="dark"] .section-title > h2,
+[data-bs-theme="dark"] #postDetail h3 {
     color: darkorange;
 }
 

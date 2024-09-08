@@ -51,7 +51,7 @@
   </div>
   <div class="col-md-6">
     <label for="validationCustom02" class="form-label">Tags</label>
-    <input type="text" class="form-control" id="validationCustom02" required>
+    <input type="text" class="form-control" @bind="@tags" id="validationCustom02" required>
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -69,7 +69,7 @@
     <label for="validationCustom03" class="form-label">City</label>
 @*             <InputFile OnChange="HandleFileUpload" accept=".jpg,.jiff,.jpeg,.bpg" />*@
         <InputFile OnChange="HandleFileUpload" id="inputFileImage" accept=".jpg,.jiff,.jpeg,.bpg" />
-    <button type="submit" @onclick="UploadImage">Upload Image</button>
+    <button type="button" @onclick="UploadImage">Upload Image</button>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
@@ -99,6 +99,7 @@
     private ApplicationUser? user;
     private bool isPostAdded = false;
     private bool isSuccess = false;
+    private string tags = String.Empty;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -151,6 +152,7 @@
         post.AuthorName = user?.UserName;
         post.AuthorID = user?.Id;
         post.CoverImageURL = _imagePath?.ToString();
+        
 
         var postId = await postServices.AddPost(post);
         if(postId != null)

@@ -3,39 +3,63 @@
 @using MongoDB.Bson
 @using UndecidedApp.Data.Models.PostModels
 @using UndecidedApp.Services
+@using UndecidedApp.Helper
 
 @inject PostService _postService;
+@inject IJSRuntime JS;
 
+<section class="section postDetails" id="postDetail">
 
-@if(post != null)
-{
-    <div>
-        <h3>@post?.Title</h3>
-        @(new MarkupString(@post.PostBody))
+    <div class="container-fluid min-vh-100">
+        @if (post != null)
+        {
+            <div>
+                <h3 style="margin-bottom: 5rem;">@post?.Title</h3>
+                @(new MarkupString(@postBody))
+            </div>
+        }
+        else
+        {
+            <div>
+                <h3>Post not found</h3>
+            </div>
+        }
+
     </div>
-}
-else
-{
-    <div>
-        <h3>Post not found</h3>
-    </div>
-}
-
+</section>
 
 
 @code {
-
     [Parameter]
-    public String PostID { get; set; }
+    public String PostID { get; set; } = String.Empty;
 
     private Post? post;
 
+    private string postBody = String.Empty;
 
     protected override async Task OnInitializedAsync()
     {
-        
+
         ObjectId objectId = ObjectId.Parse(PostID);
         post = await _postService.GetPostById(objectId);
+        if (post != null)
+        {
+            PostBuilder postBuilder = new PostBuilder();
+            postBody = postBuilder.BuildPost(post.PostBody, post);
+        }
+
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("scrollToHeight");
+
+    }
+
+    protected override void OnParametersSet()
+    {
+        JS.InvokeVoidAsync("scrollToHeight");
+
     }
 
 }
